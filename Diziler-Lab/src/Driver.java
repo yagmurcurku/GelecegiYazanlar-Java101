@@ -1,0 +1,46 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		int[] numbers = new int[5];
+		numbers[0] = 5;
+		numbers[1] = 10;
+		numbers[2] = 20;
+		numbers[3] = 30;
+		numbers[4] = 40;
+		
+		System.out.println(numbers.length);
+		System.out.println(Arrays.toString(numbers));
+		
+		System.out.println("-------------------------");
+		
+		for ( int i = 0; i<5; i++ ) {
+			System.out.println(numbers[i]);
+		}
+		
+		System.out.println("-------------------------");
+		
+		Scanner scanner = new Scanner(System.in);	
+		System.out.println("Dizi uzunluğu: ");
+		int length = scanner.nextInt();
+		int[] numbersss = new int[length];
+		
+		for ( int i=0 ; i<numbersss.length; i++) {
+			System.out.print((i+1) + ". Sayı:" );
+			numbersss[i] = scanner.nextInt();
+		}
+		
+		System.out.println(Arrays.toString(numbersss));
+		
+		int total = 0;
+		
+		for(int i = 0; i<numbersss.length; i++) {
+			total = total + numbersss[i];
+		}
+		
+		System.out.println(total / numbersss.length);
+	}
+		
+}

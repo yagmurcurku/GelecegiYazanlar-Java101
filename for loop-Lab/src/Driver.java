@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		int[] numbers = {2,4,6,8,10,12};
+		
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.println(numbers[i]);
+		}
+		
+		System.out.println("-------");
+		
+		
+		//x ile y arasındaki sayıları ekrana yazdırma
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("1. Sayı:");
+		int x = scanner.nextInt();
+		System.out.println("2. Sayı:");
+		int y = scanner.nextInt();
+		
+		for (int i = x; i <= y; i++) {
+			System.out.println(i);
+		}
+		
+		//x ile y arasındaki çift sayıları ekrana yazdırma
+		for (int i = x; i <= y; i++) {
+			if( i % 2 == 0) {
+			System.out.println(i); }
+		}
+			
+		System.out.println("-------");
+		
+		
+		String[] names;
+		Scanner scanner2 = new Scanner(System.in);
+		System.out.println("Kaç kişi girilecek: ");
+		names = new String[Integer.parseInt(scanner2.nextLine())];
+			
+		for (int j = 0; j < names.length; j++) {
+			System.out.println((j + 1) + ". kişi:");
+			names[j] = scanner2.nextLine();
+		}
+		
+		
+		for (int j = 0; j < names.length; j++) {
+			System.out.print(names[j]+", ");
+		}
+		
+		
+		
+		
+	}
+}

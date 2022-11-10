@@ -1,0 +1,25 @@
+import java.time.DayOfWeek;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		System.out.println(Math.PI);	//pi sayısı
+		
+		System.out.println(Math.pow(2, 3));		//2'nin küpü
+		System.out.println(Math.sqrt(9));		//9'un karekökü
+		System.out.println(Math.min(6, 3));		//6 ile 3 arasındaki en düşük sayı
+		System.out.println(Math.max(6, 3));		//6 ile 3 arasındaki en yüksek sayı
+		
+		float f = 1.50f;
+		System.out.println(Math.ceil(f));	//f'yi yukarı tam sayıya yuvarladı
+		System.out.println(Math.floor(f));	//f'yi aşağı tam sayıya yuvarladı
+		System.out.println(Math.round(f));	//f'yi 1.50'den itibaren yukarıya(1.50dahil), 1.50'den aşağıysa aşağıya yuvarlar
+		
+		
+		System.out.println(Math.random());	//0 ile 1 arasında rastgele sayı üretir
+
+		
+	}
+
+}

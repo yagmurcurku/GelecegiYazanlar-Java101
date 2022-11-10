@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		int[] numbers = {20,32,12,46,4};
+		System.out.println(Arrays.toString(numbers));
+		
+
+	}
+
+}

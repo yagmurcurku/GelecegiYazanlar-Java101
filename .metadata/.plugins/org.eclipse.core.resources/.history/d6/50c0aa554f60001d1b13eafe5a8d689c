@@ -1,0 +1,32 @@
+import java.util.Date;
+import java.util.Scanner;
+
+public class Driver {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		int i = 0;
+		while(i < 10) {
+			System.out.println(i);
+			i++;
+		}
+
+		System.out.println("----------------------");
+		
+		
+		while(true) {
+			System.out.println(new Date());
+			Thread.sleep(1000);
+			
+		}
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		while (true) {
+			
+		}
+		
+	}
+
+}

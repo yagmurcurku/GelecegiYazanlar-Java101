@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		int number = -10;
+		
+		boolean result = number > 0;
+		
+		if(result) {
+			System.out.println(number + " pozitif bir sayıdır");
+			System.out.println("2.");
+		} else {
+			System.out.println(number + " negatif bir sayıdır");
+		}
+			
+		System.out.println("Burası her zaman çalıştırılacak.");
+
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Lütfen bir sayı giriniz:");
+		int number2 = scanner.nextInt();
+		if(number2 > 0) {
+			System.out.println("Pozitif bir sayı girdiniz");
+		} else {
+			System.out.println("Negatif bir sayı girdiniz");
+		}
+		
+	}
+}

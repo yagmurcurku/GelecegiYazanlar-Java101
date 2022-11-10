@@ -1,0 +1,13 @@
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		boolean sonuc = 7 > 5;
+		System.out.println(sonuc);
+
+		boolean sonuc2 = 9 < 5;
+		System.out.println(sonuc2);
+	}
+
+}

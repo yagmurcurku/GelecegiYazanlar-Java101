@@ -1,0 +1,36 @@
+import java.util.Date;
+import java.util.Scanner;
+
+public class Driver {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		int i = 0;
+		while(i < 10) {
+			System.out.println(i);
+			i++;
+		}
+
+		System.out.println("----------------------");
+		
+		/*
+		//o an ki her saniyeyi yazdırır
+		while(true) {				//while(true) ile sürekli çalışan bir döngü elde edilir
+			System.out.println(new Date());
+			Thread.sleep(1000);
+			
+		}
+		*/
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		while (true) {
+			String text = scanner.nextLine();
+			System.out.println(text.toUpperCase());
+			
+		}
+		
+	}
+
+}
